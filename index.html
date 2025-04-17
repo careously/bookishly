@@ -1,0 +1,29 @@
+---
+title: bookishly
+layout: "myLayout.njk"
+---
+
+<section class="posts">
+
+    {% for post in collections.post %}
+    <div class="post">
+
+        <div class="info">
+            <div class="book-cover"> {{ post.data.book-cover }} </div>
+            <div class="book-info">
+                <h1 class="book-title title"> {{ post.data.title }} </h1>
+                <div class="author-rating">
+                    <p class="author main">{{ post.data.author }}</p>
+                    <div class="rating">{{ post.data.rating }}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <p class="review-text"> {{ post.data.review }} </p>
+        </div>
+
+    </div>
+    {% endfor %}
+ 
+</section>

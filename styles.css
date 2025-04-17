@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --title: Agbalumo;
+    --header: Niramit;
+    --main: Montserrat;
+
+    --white: #F9F4EA;
+    --orange: #C47457;
+    --dark-green: #605F4B;
+    --beige: #CDAD85;
+    --green: #9C9E80;
+    --yellow: #B68036;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6rem;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: var(--white);
+    /* border: 1px solid red; */
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* font styling */
+
+.title {
+    font-family: var(--title);
+}
+
+.header {
+    font-family: var(--header);
+}
+
+.main {
+    font-family: var(--main);
+    color: var(--dark-green);
+}
+
+/* header */
+
+.header {
+    width: 100%;
+    height: 250px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .title {
+    font-size: 60px;
+    color: var(--orange);
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px 50px 50px 5px;
+    object-fit: cover;
+    background-image: url(/images/IMG-7931.jpg);
+    background-color: var(--orange);
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px 50px 50px 5px;
+}
+
+.header-info {
+    width: 700px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.header-info p {
+    line-height: 1.7;
+}
+
+.header-info .main {
+    font-size: 20px;
+}
+
+/* divider */
+
+.divider {
+    width: 100%;
+    height: 80px;
+    margin: 50px 0 50px 0;
+    border-radius: 5px 50px 50px 5px;
+    background-color: var(--green);
+}
+
+/* content */ 
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* posts */
+
+.posts {
+    width: 700px;
+}
+
+.post {
+    width: 700px;
+    height: 500px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    border-radius: 10px;
+    background-color: var(--green);
+    margin-bottom: 2rem;
+}
+
+.info {
+    padding: 20px;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-cover {
+    width: 125px;
+    height: 150px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: var(--beige);
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-title {
+    width: 520px;
+    height: 75px;
+    padding-left: 20px;
+    border-radius: 10px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    color: var(--dark-green);
+    background-color: var(--white);
+}
+
+.author-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.author {
+    width: 275px;
+    height: 60px;
+    padding-left: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+.rating {
+    width: 225px;
+    height: 60px;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.review {
+    width: 660px;
+    height: 230px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.review-text {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: var(--main);
+    color: var(--dark-green);
+}
+
+
+/* nav */
+
+.nav {
+    width: 250px;
+}
+
+.nav-link {
+    width: 250px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    margin: 0px 0 25px 0;
+    padding-left: 25px;
+    border-radius: 5px 50px 50px 5px;
+    background-color: var(--green);
+}
+
+.nav-link a {
+    font-size: 30px;
+    color: var(--white);
+}
+
+.tag-container {
+    width: 250px;
+    height: 200px;
+}
+
+.tag-container .title {
+    font-size: 25px;
+    color: var(--dark-green);
+}
